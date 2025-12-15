@@ -1,0 +1,69 @@
+/*
+ * Copyright (c) 2022-2024 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "targetSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/linmi/.ohos/config/openharmony/default_Chat_1Jq46eFZHq5efMg3Ts5BUHYp_n9r7B_pgdkzc93sItw=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BCE7FE68F8DF735B469C4781D317308924820377584CD02A07E69A54FC2F5AADB660E73BB1EF5C0",
+          "profile": "C:/Users/linmi/.ohos/config/openharmony/default_Chat_1Jq46eFZHq5efMg3Ts5BUHYp_n9r7B_pgdkzc93sItw=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/linmi/.ohos/config/openharmony/default_Chat_1Jq46eFZHq5efMg3Ts5BUHYp_n9r7B_pgdkzc93sItw=.p12",
+          "storePassword": "0000001B8C22041C8E52144562279981647D6201430472A653B25EA15D0D8C5F5A756147445D005E2F545C"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./products/phone/entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chatList",
+      "srcPath": "./features/chatlist",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
